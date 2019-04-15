@@ -1,0 +1,124 @@
+:root {
+	--h1-font: 'Paytone One', sans-serif;
+	--h2-font: 'Montserrat Alternates', sans-serif;
+	--p-font: 'PT Sans', sans-serif;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER */
+
+header {
+   background-color: #3c8a00;
+   position: fixed;
+   top: 0;
+   left: 300px;
+   z-index: 999;
+   width: 85%;
+   opacity: 0.9;
+}
+
+h1 {
+	margin: 0;
+	padding: 15px 0 20px 50px;
+	color: #ebebe3;
+	font-family: var(--h1-font);
+	font-size: 4rem;
+	letter-spacing: 0.05em;
+   opacity: 0.9;
+   display: inline-block;
+   position: relative;
+   left: 400px;
+}
+
+.icon {
+   /* padding-top: 20px;
+   padding-left: 15px; */
+   color: #ebebe3; 
+   opacity: 0.9;
+   display: inline-block;
+   position: relative;
+   top: 15px;
+   left: 80px;
+}
+
+/* NAV */
+
+nav {
+	position: fixed;
+	top: 0px;
+	display: block;
+	height: 100%;
+	width: 300px;
+   background-color: #1a3901;
+}
+
+.access-menu {
+	list-style: none;
+	display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+}
+
+.access-item {
+   line-height: 2;
+	padding: 20px 0;
+   font-family: var(--p-font);
+   font-size: 1.3em;
+}
+
+.access-link {
+   display: inline-block;
+	text-decoration: none;
+   color: #ebebe3;
+   transition: all .2s ease-in;
+}
+
+.access-link:hover {
+   transform: scale(1.1);
+   font-weight: bold;
+}
+
+/* Explanations */
+
+.explanation {
+	margin-top: 230px;
+}
+
+section {
+  margin: 100px 350px 0 450px; 
+}
+
+h2 {
+   color: #363434;
+	font-family: var(--h2-font);
+	font-size: 2.5em;
+}
+
+.explanation-paragraph {
+   color: #363434;
+   font-family: var(--p-font);
+   margin-top: 50px;
+   font-size: 1.3em;
+}
+
+hr {
+   border-top: 0;
+   border-bottom: 4px dotted #3c8a00;
+   margin: 100px 150px 100px 450px;
+}
+
+q {
+   font-size: 1.2em;
+}
+
+span {
+   text-decoration: underline;
+   color: #1a3901;
+   font-size: 1.1em;
+   font-weight: bold;
+}
