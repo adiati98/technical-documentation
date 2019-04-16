@@ -2,13 +2,10 @@
 	--h1-font: 'Paytone One', sans-serif;
 	--h2-font: 'Montserrat Alternates', sans-serif;
 	--p-font: 'PT Sans', sans-serif;
-	--red:#ef6c57;
-	--darker-blue: #7ed3b2;
-	--sky-blue: #b9e6d3;
 	--white: #f2f2f2;
-	--dark-gray: #494949;
-	--very-dark-blue: #022c43;
 	--blackish: #141414;
+	--yellow: #f7aa00;
+	--orange: #bd512f;
 }
 
 body,
@@ -20,7 +17,7 @@ html {
 /* ---------------------  HEADER  --------------------------- */
 
 #banner {
-	background-color: var(--darker-blue);
+	background-color: var(--yellow);
 	position: fixed;
 	top: 0;
 	left: 300px;
@@ -33,30 +30,31 @@ html {
 #title {
 	margin: 0;
 	padding: 15px 0 20px 10px;
-	color: var(--very-dark-blue);
+	color: var(--blackish);
 	font-family: var(--h1-font);
-	font-size: 2rem;
+	font-size: 2.3rem;
 	letter-spacing: 0.05em;
 	opacity: 0.9;
 	display: inline-block;
 	position: relative;
-	left: 20px;
+	left: 15px;
 	top: 20px;
+	text-shadow: 2px 2px 4px var(--white);
 }
 
 .icon {
-	color: var(--sky-blue);
+	color: var(--blackish);
 	opacity: 0.9;
 	display: block;
 	position: relative;
 	margin: auto;
-	text-shadow: 2px 2px 6px var(--very-dark-blue);
+	text-shadow: 2px 2px 6px var(--white);
 }
 
 @media (max-width: 1200px) {
 	#banner {
 		width: 100%;
-		z-index: -999;
+		z-index: 999;
 		left: 0;
 	}
 
@@ -73,7 +71,7 @@ html {
 @media (max-width: 800px) {
 	#banner {
 		width: 100%;
-		z-index: -999;
+		z-index: 999;
 		left: 0;
 	}
 
@@ -88,6 +86,12 @@ html {
 }
 
 @media (max-width: 600px) {
+	#banner {
+		width: 100%;
+		z-index: 999;
+		left: 0;
+	}
+
 	#title {
 		font-size: 0.9rem;
 		margin-left: -20px;
@@ -106,7 +110,7 @@ nav {
 	display: block;
 	height: 100vh;
 	width: 300px;
-	background-color: var(--red);
+	background-color: var(--yellow);
 	z-index: 999;
 }
 
@@ -115,6 +119,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	margin-top: 50px;
+	margin-left: 30px;
 }
 
 .item {
@@ -128,7 +133,7 @@ nav {
 	display: inline-block;
 	width: 100%;
 	text-decoration: none;
-	color: var(--very-dark-blue);
+	color: var(--blackish);
 	transition: all .2s ease-in;
 	margin-left: -40px;
 }
@@ -136,8 +141,8 @@ nav {
 .nav-link:hover {
 	transform: scale(1.1);
 	font-weight: bold;
-	background-color: var(--sky-blue);
-	color: var(--very-dark-blue);
+	background-color: var(--white);
+	color: var(--blackish);
 }
 
 
@@ -187,8 +192,9 @@ nav {
 		padding: 10px 5px;
 	}
 
-	.html-item {
-		margin-left: -25px;
+	.access-menu {
+		margin-left: -10px;
+		width: 90%;
 	}
 
 	.nav-link {
@@ -255,20 +261,20 @@ nav {
 	display: inline-block;
 	width: 90%;
 	text-decoration: none;
-	color: var(--very-dark-blue);
+	color: var(--blackish);
 	transition: all .2s ease-in;
 }
 
 .link:hover {
 	transform: scale(1.1);
 	font-weight: bold;
-	background-color: var(--sky-blue);
-	color: var(--very-dark-blue);
+	background-color: var(--yellow);
+	color: var(--blackish);
 }
 
 hr {
 	border-top: 0;
-	border-bottom: 4px dotted var(--very-dark-blue);
+	border-bottom: 4px dotted var(--blackish);
 	margin: 80px 150px 0 450px;
 }
 
@@ -278,7 +284,7 @@ q {
 }
 
 .link-block {
-	background: linear-gradient(to bottom, var(--darker-blue) 0%, var(--darker-blue) 100%);
+	background: linear-gradient(to bottom, var(--yellow) 0%, var(--yellow) 100%);
 	background-position: 0% 100%;
 	background-repeat: repeat-x;
 	background-size: 4px 4px;
@@ -292,7 +298,7 @@ q {
 }
 
 code {
-	background-color: var(--sky-blue);
+	background-color: var(--yellow);
 }
 
 .menu {
@@ -317,19 +323,19 @@ span {
 	padding: 5px 10px;
 }
 
-.pink {
-	background-color: #8f1537;
-	color: #c7004c;
+.yellow {
+	background-color: var(--yellow);
+	color: var(--orange);
 }
 
-.pink-contrast {
-	background-color: #8f1537;
-	color: #ffaaaa;
+.yellow-contrast {
+	background-color: var(--yellow);
+	color: var(--blackish);
 }
 
 .link, .ref-link {
 	display: inline-block;
-	background-color: #ef6c57;
+	background-color: var(--white);
 	padding: 5px;
 }
 
@@ -473,7 +479,7 @@ span {
 /* ------------------------------ FOOTER ------------------------------ */
 
 #socmed {
-	background-color: var(--darker-blue);
+	background-color: var(--yellow);
 	padding: 10px 0;
 	opacity: 0.9;
 	width: 85%;
@@ -500,13 +506,13 @@ span {
 .socmed-icon {
 	font-size: 2.5rem;
 	color: var(--blackish);
-	text-shadow: 2px 2px 6px var(--very-dark-blue);
+	text-shadow: 2px 2px 4px var(--white);
 	transition: transform 1s;
 }
 
 .socmed-icon:hover {
-	color: #8f1537;
-	text-shadow: 2px 2px 6px var(--sky-blue);
+	color: var(--white);
+	text-shadow: 2px 2px 4px var(--blackish);
 	transform: rotate(360deg) scale(1.5);
 	font-weight: bold;
 }
